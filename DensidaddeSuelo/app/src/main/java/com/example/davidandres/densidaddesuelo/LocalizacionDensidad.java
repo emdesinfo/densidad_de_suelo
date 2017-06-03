@@ -11,23 +11,22 @@ import android.widget.Button;
 import android.widget.EditText;
 
 /**
- * Created by DAVIDANDRES on 31-05-2017.
+ * Created by DAVIDANDRES on 02-06-2017.
  */
 
-public class CalculoDensidadSuelo extends Activity {
-
-    EditText boletaCalculoDS;
+public class LocalizacionDensidad extends Activity{
+    EditText boletaLocaliza;
     Button siguienteTM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calculo_densidad_suelo);
+        setContentView(R.layout.localizacion_densidad);
 
         Bundle datos = getIntent().getExtras();
-        final String numeroBoletaMostrar = datos.getString("boleta");
-        boletaCalculoDS = (EditText) findViewById(R.id.editTextBoletaCalculoDS);
-        boletaCalculoDS.setText(numeroBoletaMostrar);
+        final String numeroBoletaMostrar = datos.getString("proctor");
+        boletaLocaliza = (EditText) findViewById(R.id.editTextBoletaLocaliza);
+        boletaLocaliza.setText(numeroBoletaMostrar);
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -42,8 +41,8 @@ public class CalculoDensidadSuelo extends Activity {
         });*/
     }
 
-    /*public void llevaDatosBoletaCalculoDS(View view){
-        String boleta = boletaCalculoDS.getText().toString();
+    public void llevaDatosBoletaLD(View view){
+        String boleta = boletaLocaliza.getText().toString();
         Log.d("R1","R1" + boleta);
         if(!boleta.isEmpty()){
             Log.d("R1","R2" + boleta);
@@ -55,7 +54,7 @@ public class CalculoDensidadSuelo extends Activity {
             r.putExtra("vacio","vacio");
             startActivity(r);
         }
-    }*/
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -78,5 +77,4 @@ public class CalculoDensidadSuelo extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

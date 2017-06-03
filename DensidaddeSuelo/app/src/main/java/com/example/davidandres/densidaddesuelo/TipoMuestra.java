@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,18 +20,19 @@ import android.widget.EditText;
 public class TipoMuestra extends Activity{
 
     EditText numeroBoletaTipoEnsayo;
+    Button siguienteTM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tipo_muestra);
 
+
+
         Bundle datos = getIntent().getExtras();
-        String numeroBoletaMostrar = datos.getString("proctor");
+        final String numeroBoletaMostrar = datos.getString("proctor");
         numeroBoletaTipoEnsayo = (EditText) findViewById(R.id.editTextNumeroBoletaTipoEnsayo);
         numeroBoletaTipoEnsayo.setText(numeroBoletaMostrar);
-
-
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -45,20 +47,20 @@ public class TipoMuestra extends Activity{
         });*/
     }
 
-    /*public void llevaDatosProctor(View view){
-        String boleta = numeroBoleta.getText().toString();
+    public void llevaDatosBoleta(View view){
+        String boleta = numeroBoletaTipoEnsayo.getText().toString();
+        Log.d("R1","R1" + boleta);
         if(!boleta.isEmpty()){
-            Intent r = new Intent(this,TipoMuestra.class);
-            r.putExtra("protor" , boleta);
+            Log.d("R1","R2" + boleta);
+            Intent r = new Intent(this,LocalizacionDensidad.class);
+            r.putExtra("proctor" , boleta);
             startActivity(r);
         }else{
-            Intent r = new Intent(this,TipoMuestra.class);
+            Intent r = new Intent(this,LocalizacionDensidad.class);
             r.putExtra("vacio","vacio");
             startActivity(r);
         }
-    }*/
-
-
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

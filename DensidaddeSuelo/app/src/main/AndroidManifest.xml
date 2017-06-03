@@ -22,6 +22,12 @@
         <activity
             android:name=".TipoMuestra">
         </activity>
+        <activity
+            android:name=".LocalizacionDensidad">
+        </activity>
+        <activity
+            android:name=".CalculoDensidadSuelo">
+        </activity>
     </application>
 
 </manifest>
