@@ -12,11 +12,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText numeroBoleta;
-    Button envioDatosProctor;
+    RadioButton densimetroNuclear,conoDeArena;
+    Button salirPantalla1;
 
 
     @Override
@@ -25,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         numeroBoleta = (EditText) findViewById(R.id.editTextNumeroBoleta);
+        densimetroNuclear = (RadioButton) findViewById(R.id.radioButtonDN);
+        conoDeArena = (RadioButton) findViewById(R.id.radioButtonCA);
+        salirPantalla1 = (Button) findViewById(R.id.buttonSalirPantalla1);
+
+        salirPantalla1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipoDeEquipo();
+            }
+        });
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -39,13 +52,27 @@ public class MainActivity extends AppCompatActivity {
         });*/
     }
 
+    public String tipoDeEquipo(){
+        String dN="";
+        if(densimetroNuclear.isChecked()){
+            dN = "Densimetro Nuclear";
+            //Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+
+        }
+        return dN;
+    }
+
     public void llevaDatosProctor(View view){
         String boleta = numeroBoleta.getText().toString();
         Log.d("R1","R1" + boleta);
+        String densimetroNuclear_1 = tipoDeEquipo();
+        Log.d("DM","DM " + densimetroNuclear_1);
+
         if(!boleta.isEmpty()){
             Log.d("R1","R2" + boleta);
             Intent r = new Intent(this,TipoMuestra.class);
             r.putExtra("proctor" , boleta);
+            r.putExtra("densimetro", densimetroNuclear_1);
             startActivity(r);
         }else{
             Intent r = new Intent(this,TipoMuestra.class);
