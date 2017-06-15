@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="21dp"
+            android:textSize="21sp"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Datos del Proctor" />
@@ -34,40 +34,39 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
+        <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="21dp"
-            android:layout_gravity="center"
-            android:text="Número de Boleta" />
-
-        <EditText
-            android:id="@+id/editTextNumeroBoleta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="21dp"
-            android:layout_gravity="center"
-            android:inputType="textPersonName"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+            android:layout_weight="1" />
 
         <TextView
             android:id="@+id/textView3"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Identificación del Informe o Certificado"
+            android:textSize="21dp" />
+
+        <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="21dp"
-            android:layout_gravity="center"
-            android:text="Número de Informe o Certificado" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -78,12 +77,54 @@
 
         <TextView
             android:id="@+id/textView4"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Densidad de Suelo"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="21dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Proctor" />
+            android:layout_weight="1"
+            android:text="Identificación de la Boleta"
+            android:textSize="21sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextNumeroBoleta"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="21sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -115,28 +156,30 @@
                     android:text="Tipo de Equipo a Utilizar" />
             </LinearLayout>
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/tipo_equipo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonDN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15dp"
                     android:layout_weight="1"
-                    android:text="Densimetro Nuclear" />
+                    android:text="Densimetro Nuclear"
+                    android:textSize="15dp" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioButtonCA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15dp"
                     android:layout_weight="1"
-                    android:text="Cono de Arena" />
-            </LinearLayout>
+                    android:text="Cono de Arena"
+                    android:textSize="15dp" />
+            </RadioGroup>
 
         </LinearLayout>
 
@@ -149,7 +192,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSalirPantalla1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
