@@ -32,8 +32,123 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Espesor Capa" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextEC11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XX"
+            android:maxLength="2"
+            android:text="" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextEC12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
+            android:text="" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Espesor Medicion" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextEM11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XX"
+            android:maxLength="2"
+            android:text="" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextEM12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType=""
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
+            android:text="" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView7"
@@ -85,121 +200,6 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:text="Espesor Capa" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:text="Espesor Medi" />
-
-        <EditText
-            android:id="@+id/editText6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -208,49 +208,65 @@
             android:text="Densidad Húmeda" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/editTextDH11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XXXX"
+            android:maxLength="4"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/editTextDH12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XXXX"
+            android:maxLength="4"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText13"
+            android:id="@+id/editTextDH13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XXXX"
+            android:maxLength="4"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText14"
+            android:id="@+id/editTextDH14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XXXX"
+            android:maxLength="4"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText15"
+            android:id="@+id/editTextDH15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XXXX"
+            android:maxLength="4"
             android:text="" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -268,49 +284,65 @@
             android:text="Húmedad" />
 
         <EditText
-            android:id="@+id/editText16"
+            android:id="@+id/editTextH11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:hint="X.X"
+            android:maxLength="3"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText17"
+            android:id="@+id/editTextH12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:hint="X.X"
+            android:maxLength="3"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText18"
+            android:id="@+id/editTextH13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:hint="X.X"
+            android:maxLength="3"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText19"
+            android:id="@+id/editTextH14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:hint="X.X"
+            android:maxLength="3"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText20"
+            android:id="@+id/editTextH15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:hint="X.X"
+            android:maxLength="3"
             android:text="" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -328,49 +360,65 @@
             android:text="Densidad Seca" />
 
         <EditText
-            android:id="@+id/editText21"
+            android:id="@+id/editTextDS11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText22"
+            android:id="@+id/editTextDS12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText23"
+            android:id="@+id/editTextDS13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText24"
+            android:id="@+id/editTextDS14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText25"
+            android:id="@+id/editTextDS15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -379,178 +427,41 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
+        <Space
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
+            android:id="@+id/textViewDMCS_11"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="center"
+            android:textSize="15sp"
             android:text="DMCS" />
 
-        <EditText
-            android:id="@+id/editText26"
-            android:layout_width="match_parent"
+        <Space
+            android:layout_width="60sp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:layout_weight="1" />
 
         <EditText
-            android:id="@+id/editText27"
-            android:layout_width="match_parent"
+            android:id="@+id/editTextDMCS11"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="XXXX"
+            android:maxLength="4"
             android:text="" />
 
-        <EditText
-            android:id="@+id/editText28"
-            android:layout_width="match_parent"
+        <Space
+            android:layout_width="60sp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:layout_weight="1" />
 
-        <EditText
-            android:id="@+id/editText29"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText30"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:text="Densidad Máxima" />
-
-        <EditText
-            android:id="@+id/editText31"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText32"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText33"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText34"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText35"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:text="Densidad Minima" />
-
-        <EditText
-            android:id="@+id/editText36"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText37"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText38"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText39"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
-
-        <EditText
-            android:id="@+id/editText40"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -568,48 +479,63 @@
             android:text="Compactacion" />
 
         <EditText
-            android:id="@+id/editText41"
+            android:id="@+id/editTextC11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText42"
+            android:id="@+id/editTextC12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText43"
+            android:id="@+id/editTextC13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText44"
+            android:id="@+id/editTextC14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
 
         <EditText
-            android:id="@+id/editText45"
+            android:id="@+id/editTextC15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="4"
+            android:enabled="false"
+            android:textColor="#212121"
             android:text="" />
     </LinearLayout>
 
