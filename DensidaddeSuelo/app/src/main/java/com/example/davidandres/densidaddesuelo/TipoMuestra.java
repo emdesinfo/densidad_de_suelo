@@ -31,8 +31,10 @@ public class TipoMuestra extends Activity{
 
         Bundle datos = getIntent().getExtras();
         final String numeroBoletaMostrar = datos.getString("proctor");
+        final String densimetroNuclear = datos.getString("densimetro");
+        Log.d("DM1","DM1 " + densimetroNuclear);
         numeroBoletaTipoEnsayo = (EditText) findViewById(R.id.editTextNumeroBoletaTipoEnsayo);
-        numeroBoletaTipoEnsayo.setText(numeroBoletaMostrar);
+        numeroBoletaTipoEnsayo.setText(numeroBoletaMostrar + " " + densimetroNuclear);
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
