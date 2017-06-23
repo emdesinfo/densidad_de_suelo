@@ -3,8 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.davidandres.densidaddesuelo.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/principal"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_principal"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/tipoDeMuestra"
+        android:orderInCategory="100"
+        android:title="@string/action_tipo_muestra"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/localizacionDensidad"
+        android:orderInCategory="100"
+        android:title="@string/action_localizacion_densidad"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/calculoDensidadSuelo"
+        android:orderInCategory="100"
+        android:title="@string/action_calculo_densidad_suelo"
+        app:showAsAction="never" />
+
 </menu>

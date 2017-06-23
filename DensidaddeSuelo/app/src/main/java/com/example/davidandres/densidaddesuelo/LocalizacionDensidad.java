@@ -3,6 +3,8 @@ package com.example.davidandres.densidaddesuelo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,11 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 /**
  * Created by DAVIDANDRES on 02-06-2017.
  */
 
-public class LocalizacionDensidad extends Activity{
+public class LocalizacionDensidad extends AppCompatActivity {
     EditText boletaLocaliza;
     Button siguienteTM;
 
@@ -28,10 +31,10 @@ public class LocalizacionDensidad extends Activity{
         boletaLocaliza = (EditText) findViewById(R.id.editTextBoletaLocaliza);
         boletaLocaliza.setText(numeroBoletaMostrar);
 
-        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,7 +74,7 @@ public class LocalizacionDensidad extends Activity{
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.principal && id == R.id.tipoDeMuestra && id == R.id.localizacionDensidad && id == R.id.calculoDensidadSuelo) {
             return true;
         }
 

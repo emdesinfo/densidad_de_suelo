@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="@string/toolbar_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +23,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TipoMuestra">
+            android:name=".TipoMuestra"
+            android:label="@string/toolbar_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".LocalizacionDensidad">
+            android:name=".LocalizacionDensidad"
+            android:label="@string/toolbar_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".CalculoDensidadSuelo">
+            android:name=".CalculoDensidadSuelo"
+            android:label="@string/toolbar_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
     </application>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -17,7 +18,7 @@ import android.widget.EditText;
  * Created by DAVIDANDRES on 31-05-2017.
  */
 
-public class TipoMuestra extends Activity{
+public class TipoMuestra extends AppCompatActivity{
 
     EditText numeroBoletaTipoEnsayo;
     Button siguienteTM;
@@ -27,8 +28,6 @@ public class TipoMuestra extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tipo_muestra);
 
-
-
         Bundle datos = getIntent().getExtras();
         final String numeroBoletaMostrar = datos.getString("proctor");
         final String densimetroNuclear = datos.getString("densimetro");
@@ -36,10 +35,10 @@ public class TipoMuestra extends Activity{
         numeroBoletaTipoEnsayo = (EditText) findViewById(R.id.editTextNumeroBoletaTipoEnsayo);
         numeroBoletaTipoEnsayo.setText(numeroBoletaMostrar + " " + densimetroNuclear);
 
-        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +78,7 @@ public class TipoMuestra extends Activity{
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.principal && id == R.id.tipoDeMuestra && id == R.id.localizacionDensidad && id == R.id.calculoDensidadSuelo) {
             return true;
         }
 
